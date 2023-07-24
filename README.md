@@ -9,6 +9,9 @@ A project to showcase custom list views using FXML files - incorporating modern 
 The tasks and user information are stored in a MySQL database.<br>
 The application can send you a reminder email using JavaMail.<br>
 
+
+![צילום מסך 2023-07-24 213734](https://github.com/Inbar767/My-Management-App/assets/118209251/0a34acd1-6031-475c-b171-d6a0d912ae81)
+
 <h2>Requirements</h2>
 In order to use this project you must have JavaFx, and JavaMail.<br>
 You can download JavaFx from here: <a href="https://www.oracle.com/java/technologies/install-javafx-sdk.html">JavaFX Download</a><br>
