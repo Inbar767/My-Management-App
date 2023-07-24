@@ -36,9 +36,9 @@ public class CalendarController {
     @FXML
     private Label year;
     private User mainUser;
-	private Calendar date;  
-	private Button[] buttons; //Array of buttons for days of month
-	private Button selectedButton;
+    private Calendar date;  
+    private Button[] buttons; //Array of buttons for days of month
+    private Button selectedButton;
 	
 	  //initialize method - when program starts running it draws Calendar of current month
     public void initialize(User mainUser)
