@@ -8,6 +8,7 @@ A project to showcase custom list views using FXML files - incorporating modern 
 <img src="https://user-images.githubusercontent.com/118209251/255683165-b7c7b6b8-7fe5-4edf-a313-da2d663b49f7.png" height="410" width="600" ><br>
 The tasks and user information are stored in a MySQL database.<br>
 The application can send you a reminder email using JavaMail.<br>
+![צילום מסך 2023-07-24 213734](https://github.com/Inbar767/My-Management-App/assets/118209251/c53f4cdc-fdc6-45ee-b41c-d536c83f717d)
 
 <h2>Requirements</h2>
 In order to use this project you must have JavaFx, and JavaMail.<br>
