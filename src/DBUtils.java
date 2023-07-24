@@ -89,7 +89,7 @@ public class DBUtils {
 		Connection connection = null;
 		Statement statement = null;
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tasks_manage", "root", "Inbar2023");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tasks_manage", "root", "****");
 			statement = connection.createStatement();
 			statement.executeUpdate(sql);
 		}catch(SQLException e){
@@ -108,7 +108,7 @@ public class DBUtils {
 	
 	private static List<Map<String, Object>> getFromTable(String query) {
 	    try (
-	        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tasks_manage", "root", "Inbar2023");
+	        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tasks_manage", "root", "****");
 	        Statement statement = connection.createStatement();
 	        ResultSet resultSet = statement.executeQuery(query);
 	    ) {
