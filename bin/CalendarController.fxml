@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="638.0" prefWidth="959.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalendarController">
+   <children>
+      <GridPane fx:id="gridPane" layoutX="354.0" layoutY="110.0" opacity="0.6" prefHeight="528.0" prefWidth="605.0" style="-fx-border-color: #00000;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="60.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints fx:id="table" maxHeight="-Infinity" minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <effect>
+            <Blend />
+         </effect>
+      </GridPane>
+      <GridPane layoutX="354.0" layoutY="78.0" opacity="0.6" prefHeight="30.0" prefWidth="605.0" style="-fx-border-color: #00000;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="60.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="30.0" prefHeight="20.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #ff9eb9;">
+               <children>
+                  <Label layoutX="19.0" layoutY="8.0" text="Sun" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff9eb9;" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="16.0" layoutY="8.0" text="Mon" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff9eb9;" GridPane.columnIndex="2">
+               <children>
+                  <Label layoutX="19.0" layoutY="8.0" text="Tue" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff9eb9;" GridPane.columnIndex="3">
+               <children>
+                  <Label layoutX="16.0" layoutY="8.0" text="Wed" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="24.0" prefWidth="82.0" style="-fx-background-color: #ff9eb9;" GridPane.columnIndex="4">
+               <children>
+                  <Label layoutX="18.0" layoutY="8.0" text="Thu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff9eb9;" GridPane.columnIndex="5">
+               <children>
+                  <Label layoutX="22.0" layoutY="8.0" text="Fri" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="30.0" prefWidth="139.0" style="-fx-background-color: #ff9eb9;" GridPane.columnIndex="6">
+               <children>
+                  <Label layoutX="20.0" layoutY="8.0" text="Sat" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </GridPane>
+      <Label fx:id="month" layoutX="583.0" layoutY="36.0" prefHeight="32.0" prefWidth="105.0" text="####">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="540.0" layoutY="37.0" mnemonicParsing="false" onAction="#monthDown" prefHeight="30.0" prefWidth="25.0" style="-fx-background-color: #ff9eb9;" text="&lt;" textFill="WHITE">
+         <effect>
+            <Reflection fraction="0.4" topOpacity="0.25" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="754.0" layoutY="37.0" mnemonicParsing="false" onAction="#monthUp" prefHeight="30.0" prefWidth="28.0" style="-fx-background-color: #ff9eb9;" text="&gt;" textFill="WHITE">
+         <effect>
+            <Reflection fraction="0.4" topOffset="0.1" topOpacity="0.25" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="year" layoutX="690.0" layoutY="36.0" prefHeight="32.0" prefWidth="58.0" text="####">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="644.0" prefWidth="355.0" style="-fx-background-color: #ff9eb9;">
+         <children>
+            <Text fill="WHITE" layoutX="95.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Management Application" textAlignment="CENTER" wrappingWidth="165.04957580566406">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <Text fill="WHITE" layoutX="34.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="track your day" textAlignment="CENTER" wrappingWidth="287.4496154785156">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="-11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#logOffPressed" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ff9eb9;" text="log off" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" layoutX="178.0" layoutY="148.0" startX="-100.0" stroke="WHITE" />
+            <TableView fx:id="tasksTable" layoutX="34.0" layoutY="198.0" prefHeight="409.0" prefWidth="287.0">
+              <columns>
+                <TableColumn fx:id="timeColumn" prefWidth="75.0" text="time" />
+                <TableColumn fx:id="taskColumn" prefWidth="211.00001525878906" text="task" />
+              </columns>
+            </TableView>
+            <Button layoutX="30.0" layoutY="576.0" mnemonicParsing="false" onAction="#removeTask" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #ff9eb9;" text="remove" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="240.0" layoutY="577.0" mnemonicParsing="false" onAction="#addTask" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #ff9eb9;" text="add" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="138.0" layoutY="577.0" mnemonicParsing="false" onAction="#updateTask" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #ff9eb9;" text="update" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Pane layoutX="117.0" layoutY="577.0" prefHeight="30.0" prefWidth="21.0" style="-fx-background-color: #ffffff;" />
+            <Pane layoutX="224.0" layoutY="577.0" prefHeight="30.0" prefWidth="18.0" style="-fx-background-color: #ffffff;" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
