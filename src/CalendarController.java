@@ -164,10 +164,6 @@ public class CalendarController {
     {
     	int year = Integer.parseInt(this.year.getText());
     	String buttonString = selectedButton.getText();
-    	if(buttonString.length() > 2)
-    	{
-    		buttonString = buttonString.substring(0, buttonString.indexOf(2));
-    	}
     	int day = Integer.parseInt(buttonString);
     	return new GregorianCalendar(year, date.get(Calendar.MONTH), day).getTime();
     }
