@@ -13,8 +13,8 @@ import java.util.Properties;
 
 //This class is used for sending email
 public class EmailSender {
-	private final static String EMAIL_SENDER = "Managementapp767@gmail.com";
-	private final static String PASSWORD = "juvyhtqvsrdubukr";
+	private final static String EMAIL_SENDER = "****@gmail.com";
+	private final static String PASSWORD = "*****";
 	
 	public static void send(String emailReciever, String username, Task taskToSend)
 	{
