@@ -136,7 +136,6 @@ public class CalendarController {
     	Date dayDate = getSelectedDate();
     	if(dayDate != null)
     	{
-    		
     		List <Task> returnedList = DBUtils.getTasks(mainUser.getUserName(), getSelectedDate());
     		ObservableList <Task> tasksList = FXCollections.observableArrayList(returnedList);
     		Task birthdayTask = addBirthday();
