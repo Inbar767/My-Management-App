@@ -10,7 +10,7 @@ The tasks and user information are stored in a MySQL database.<br>
 The application can send you a reminder email using JavaMail.<br>
 
 <h2>Requirements</h2>
-In order to use this project you must have JavaFx, and JavaMail.
-You can download JavaFx from here: <a href="https://www.oracle.com/java/technologies/install-javafx-sdk.html">SFML Download</a><br>
-You can download JavaMail from here: <a href="https://javaee.github.io/javamail/#Download_JavaMail_Release">SFML Download</a><br>
+In order to use this project you must have JavaFx, and JavaMail.<br>
+You can download JavaFx from here: <a href="https://www.oracle.com/java/technologies/install-javafx-sdk.html">JavaFX Download</a><br>
+You can download JavaMail from here: <a href="https://javaee.github.io/javamail/#Download_JavaMail_Release">JavaMail Download</a><br>
 
